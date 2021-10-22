@@ -1,0 +1,23 @@
+[
+{
+    "name": "Rust Basics",
+    "app_type": "Book",
+    "id": "rust_b",
+    "version": "1.0",
+    "url": "https://github.com/MKProj/MKProj-Rev/releases/download/rust_b/Rust-Basics_pdf.zip"
+  },
+  {
+    "name": "Minerva Windows",
+    "app_type": "Application",
+    "id": "minerva_win",
+    "version": "1.1.1",
+    "url": "https://github.com/MKProj/Minerva/releases/download/v1.1.1-win/minerva-1.1.1.Setup.exe"
+  },
+  {
+    "name": "Minerva Debian",
+    "app_type": "Application",
+    "id": "minerva_deb",
+    "version": "1.1.1",
+    "url": "https://github.com/MKProj/Minerva/releases/download/v1.1.1-deb/minerva_1.1.1_amd64.deb"
+  }
+]
