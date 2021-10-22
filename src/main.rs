@@ -38,12 +38,6 @@ enum CLI {
         max: Option<u8>,
     },
     Update
-    /*#[structopt(about = "Install a specified application by it's id")]
-       Install {
-           #[structopt(short, long)]
-           id: String
-       },
-       */
 }
 #[tokio::main]
 async fn main() {
@@ -51,13 +45,10 @@ async fn main() {
     match cli {
         CLI::Get { id } => options::get(id).await.unwrap(),
         CLI::Search { name } => options::search(&name),
-        /*
-        CLI::Install {id}=> {
-            install(id).await.unwrap();
-        }
-        */
         CLI::List {max} => options::list(max),
-        CLI::Update => std::process::Command::new("cargo").arg("install").arg("mkpm").spawn().expect("Unable to update"),
+        CLI::Update => {
+            let update = options::update();
+        },
         _ => {
             println!("Invalid command! Try mkpm --help");
         }
