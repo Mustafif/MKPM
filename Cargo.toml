@@ -6,7 +6,8 @@ license = "GPL"
 description = "A Package Manager for MKProject Applications"
 author = "Mustafif Khan"
 homepage = "http://mkproj.com"
-repository = ""
+repository = "https://github.com/MKProj/MKPM"
+readme = "README.md"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]

@@ -5,3 +5,7 @@ you can easily via __Cargo__:
 ```shell
 $ cargo install mkpm 
 ```
+## Features being worked on...
+- Progress Bar (for get command)
+- Larger library
+- 
