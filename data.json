@@ -7,6 +7,27 @@
     "url": "https://github.com/MKProj/MKProj-Rev/releases/download/rust_b/Rust-Basics_pdf.zip"
   },
   {
+    "name": "Kotlin Basics",
+    "app_type": "Book",
+    "id": "kotlin_b",
+    "version": "1.0",
+    "url": "https://github.com/MKProj/MKProj-Rev/releases/download/kt_b/Kotlin-Basics_pdf.zip"
+  },
+  {
+    "name": "Git Basics",
+    "app_type": "Book",
+    "id": "git_b",
+    "version": "1.0",
+    "url": "https://github.com/MKProj/MKProj-Rev/releases/download/git_b/Git-Basics_pdf.zip"
+  },
+  {
+    "name": "Rust Basics",
+    "app_type": "Book",
+    "id": "cpp_b",
+    "version": "1.0",
+    "url": "https://github.com/MKProj/MKProj-Rev/releases/download/cpp_b/CPP-Basics_pdf.zip"
+  },
+  {
     "name": "Minerva Windows",
     "app_type": "Application",
     "id": "minerva_win",

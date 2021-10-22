@@ -8,4 +8,4 @@ $ cargo install mkpm
 ## Features being worked on...
 - Progress Bar (for get command)
 - Larger library
-- 
+- More concurrent & parallel processing
