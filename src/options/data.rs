@@ -23,6 +23,8 @@ pub enum AppType {
     Book,
     /// Any program, desktop or other sorts are here
     Application,
+    /// Any Cargo application
+    Cargo,
     /// Any undetermined, or not ready applications go under here
     Unknown,
 }
@@ -45,6 +47,7 @@ impl AppType {
         match self {
             self::AppType::Book => Ok("Book".to_owned()),
             self::AppType::Application => Ok("Application".to_owned()),
+            self::AppType::Cargo => Ok("Cargo".to_owned()),
             self::AppType::Unknown => Ok("Unknown".to_owned()),
         }
     }
@@ -52,6 +55,7 @@ impl AppType {
         match app_type.as_str() {
             "Book" => Self::Book,
             "Application" => Self::Application,
+            "Cargo" => Self::Cargo,
             _ => Self::Unknown,
         }
     }

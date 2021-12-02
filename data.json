@@ -21,7 +21,7 @@
     "url": "https://github.com/MKProj/MKProj-Rev/releases/download/git_b/Git-Basics_pdf.zip"
   },
   {
-    "name": "Rust Basics",
+    "name": "C++ Basics",
     "app_type": "Book",
     "id": "cpp_b",
     "version": "1.0",
@@ -40,5 +40,12 @@
     "id": "minerva_deb",
     "version": "1.1.1",
     "url": "https://github.com/MKProj/Minerva/releases/download/v1.1.1-deb/minerva_1.1.1_amd64.deb"
+  },
+  {
+    "name": "texcreate",
+    "app_type": "Cargo",
+    "id": "texcreate",
+    "version": "^0.7",
+    "url": ""
   }
 ]

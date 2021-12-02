@@ -2,11 +2,24 @@ pub type Result<T> = std::result::Result<T, Box<dyn std::error::Error + Send + S
 
 use super::{data, AppType};
 use std::io::{self, Cursor, Read};
+use std::process::Command;
 
 pub async fn get(id: String) -> Result<()> {
     let d = data::Data::load_data().expect("Couldn't load data");
     for i in d {
         let mut path_suffix = String::new();
+        /// Check if apptype is cargo, then install and return Ok(())
+        if i.app_type.is_what().unwrap() == "Cargo".to_owned(){
+            if &i.id == "texcreate"{
+                println!("Installing TexCreate...");
+                Command::new("cargo")
+                    .arg("install")
+                    .arg("texcreate")
+                    .spawn()
+                    .expect("Failed to install TexCreate");
+            }
+            return Ok(());
+        }
         match i.app_type {
             AppType::Book => {
                 path_suffix = ".zip".to_owned();
@@ -18,10 +31,11 @@ pub async fn get(id: String) -> Result<()> {
                 if cfg!(linux) {
                     path_suffix = ".deb".to_owned();
                 }
-            }
+            },
             AppType::Unknown => {
                 panic!()
             }
+            _ => {}
         };
 
         if id == i.id {
